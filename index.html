@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>COSMOS: Nuestra Galaxia - Vía Láctea</title>
+<style>
+/* TEMA ESPECIFICO: VIA LACTEA - Proyecto El Universo CBTis 29 - Archivo unico con CSS */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Inter:wght@400;700&display=swap');
+:root{--bg:#070916;--card:#11132a;--text:#eef2ff;--morado:#9d4edd;--azul:#00d4ff;--borde:#22264a}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;line-height:1.7;background: radial-gradient(ellipse at top, #1b1e4a 0%, #070916 60%);}
+h1,h2,h3,.logo{font-family:'Orbitron',sans-serif}
+header{position:sticky;top:0;z-index:100;background:#0a0c20ee;backdrop-filter:blur(10px);padding:15px 5%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--borde)}
+.logo{font-size:1.3rem;letter-spacing:2px} .logo span{color:var(--azul)}
+nav a{color:#aab0d0;text-decoration:none;margin-left:14px;padding:8px 16px;border-radius:20px;transition:.3s;font-size:14px}
+nav a:hover{background:var(--morado);color:white}
+.hero{padding:80px 5%;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+.hero h1{font-size:3rem;line-height:1.1} .hero h1 span{color:var(--azul)}
+.btn{display:inline-block;background:linear-gradient(90deg,var(--morado),var(--azul));color:white;padding:12px 26px;border-radius:30px;text-decoration:none;font-weight:700;margin-top:12px;border:none;cursor:pointer;transition:.3s}
+.btn.sec{background:transparent;border:1px solid var(--azul)}
+.btn:hover{transform:scale(1.05)}
+section{padding:60px 5%;border-bottom:1px solid #12142a}
+.card{background:var(--card);border:1px solid var(--borde);border-radius:18px;padding:24px;margin-bottom:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+img{width:100%;border-radius:14px}
+.titulo-seccion{font-size:2.2rem;margin-bottom:20px;color:var(--azul)}
+input,textarea,select{width:100%;padding:13px;margin:8px 0 16px;border-radius:10px;border:1px solid var(--borde);background:#080a1a;color:white}
+footer{text-align:center;padding:30px;background:#050612;color:#6b7190}
+.etiqueta{display:inline-block;background:#1d2147;color:var(--azul);padding:5px 12px;border-radius:20px;font-size:12px;margin-bottom:10px;font-weight:700}
+@media(max-width:800px){.hero{grid-template-columns:1fr} header{flex-direction:column;gap:10px}}
+</style>
+</head>
+<body>
+
+<!-- ENCABEZADO Y MENU DE NAVEGACION - Requisito 6 y 7 -->
+<header>
+  <div class="logo">VIA <span>LACTEA</span></div>
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#contenido">Nuestra Galaxia</a>
+    <a href="#adicional">Exploración</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<!-- PAGINA 1: INICIO - Requisito 2 -->
+<section id="inicio" class="hero">
+  <div>
+    <span class="etiqueta">ACTIVIDAD: EL UNIVERSO - TEMA: VIA LACTEA</span>
+    <h1>Vivimos dentro de un <span>gigante espiral</span></h1>
+    <p><b>Nombre del sitio:</b> COSMOS: Nuestra Galaxia</p>
+    <p><b>Propósito:</b> Explicar de forma clara qué es la Vía Láctea, nuestra casa en el universo, para estudiantes de bachillerato.</p>
+    <p>Nuestra galaxia tiene 100,000 años luz de diámetro y contiene entre 100 y 400 mil millones de estrellas. El Sol está en el Brazo de Orión, a 26,000 años luz del centro.</p>
+    <a href="#contenido" class="btn">Explorar contenido</a>
+    <a href="#adicional" class="btn sec">Ver curiosidades</a>
+  </div>
+  <div>
+    <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=800" alt="Vía Láctea imagen representativa">
+    <div class="card" style="margin-top:15px"><b>¿Qué encontrará el visitante?</b> Estructura, datos científicos, cómo observarla y un formulario de contacto.</div>
+  </div>
+</section>
+
+<!-- PAGINA 2: CONTENIDO PRINCIPAL - Requisito 3 -->
+<section id="contenido">
+  <h2 class="titulo-seccion">Página 2: Contenido Principal - Nuestra Galaxia</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>1. Centro Galáctico - Sagitario A*</h3>
+      <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=600" alt="Centro galactico">
+      <p>En el centro hay un agujero negro supermasivo de 4 millones de masas solares. A su alrededor hay cúmulos de estrellas muy viejas.</p>
+      <ul><li>Tipo de galaxia: Espiral barrada</li><li>Edad: 13,600 millones de años</li></ul>
+    </div>
+    <div class="card">
+      <h3>2. Brazos Espirales</h3>
+      <p>Tenemos 4 brazos principales. Nosotros estamos en uno secundario.</p>
+      <p><b>Lista de brazos:</b></p>
+      <p>- Brazo de Perseo<br>- Brazo de Scutum-Centaurus<br>- Brazo de Sagitario<br>- <b>Brazo de Orión (aquí estamos)</b></p>
+      <a href="#adicional" class="btn">Conocer más</a>
+    </div>
+    <div class="card">
+      <h3>3. El Halo de Materia Oscura</h3>
+      <p>La Vía Láctea está envuelta en materia oscura invisible. Es el pegamento gravitacional que evita que nos desintegremos. Representa el 90% de la masa de la galaxia.</p>
+      <p><b>Dato científico:</b> Gira a 828,000 km/h alrededor del centro.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PAGINA 3: INFORMACION ADICIONAL - Requisito 4 -->
+<section id="adicional">
+  <h2 class="titulo-seccion">Página 3: Información Adicional</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Glosario Cósmico</h3>
+      <p><b>Año luz:</b> Distancia que recorre la luz en un año: 9.4 billones de km.</p>
+      <p><b>Nebulosa:</b> Nube de gas donde nacen estrellas.</p>
+      <p><b>Parsec:</b> 3.26 años luz, usado por astrónomos.</p>
+    </div>
+    <div class="card">
+      <h3>Preguntas Frecuentes y Curiosidades</h3>
+      <p><b>¿Se ve desde Ecatepec?</b> Sí, pero necesitas ir a un lugar sin luces, de junio a agosto se ve clarísima.</p>
+      <p><b>¿Vamos a chocar con Andrómeda?</b> Sí, en 4.5 mil millones de años se fusionarán.</p>
+      <p><b>Comparación:</b> Vía Láctea (100 mil años luz) vs Andrómeda (220 mil años luz).</p>
+    </div>
+    <div class="card">
+      <h3>Exploración: Misión Gaia</h3>
+      <p>La sonda Gaia de la ESA está creando el mapa 3D más grande de nuestra galaxia con 1,700 millones de estrellas catalogadas.</p>
+      <img src="https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?q=80&w=800&auto=format&fit=crop" alt="Mapa de la Vía Láctea por la misión Gaia ESA">
+      <br><br><a href="#contacto" class="btn">Contactar</a>
+      <a href="#inicio" class="btn sec">Regresar al inicio</a>
+    </div>
+  </div>
+</section>
+
+<!-- PAGINA 4: CONTACTO - Requisito 5 y 10 -->
+<section id="contacto">
+  <h2 class="titulo-seccion">Página 4: Contacto</h2>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px" class="grid">
+    <div class="card">
+      <h3>Información de contacto (ficticia / institucional)</h3>
+      <p><b>Proyecto:</b> COSMOS: Nuestra Galaxia</p>
+      <p><b>Alumno:</b> CBTis No. 29 - Módulo IV</p>
+      <p><b>Tema específico registrado:</b> Vía Láctea - Estructura y Observación</p>
+      <p><b>Correo:</b> vialactea.proyecto@cbtis29.edu.mx</p>
+      <p><b>Fuentes:</b> NASA, ESA Gaia Archive</p>
+      <br>
+      <p><b>¿Qué hace mi propuesta diferente?</b> No es solo copiar datos, explico con lenguaje de estudiante y enfoque en cómo verla desde México, no como Wikipedia.</p>
+    </div>
+    <div class="card">
+      <h3>Formulario de demostración - Solicitud de información</h3>
+      <p style="font-size:13px;color:#8a8fb0">No se conecta a base de datos, como pide la práctica.</p>
+      <form onsubmit="alert('¡Gracias! Tu consulta sobre la Vía Láctea fue enviada (simulación)'); return false;">
+        <label>Campo de nombre</label>
+        <input type="text" placeholder="Tu nombre completo" required>
+        <label>Campo de correo electrónico</label>
+        <input type="email" placeholder="tu.correo@ejemplo.com" required>
+        <label>Campo para escribir mensaje o consulta</label>
+        <textarea rows="4" placeholder="Ej. ¿Dónde puedo ver la Vía Láctea desde Ecatepec?" required></textarea>
+        <label>Tema de interés</label>
+        <select><option>Centro galáctico</option><option>Brazos espirales</option><option>Cómo observarla</option></select>
+        <button type="submit" class="btn">Botón para enviar</button>
+        <a href="#inicio" class="btn sec" style="margin-left:10px">Regresar al inicio</a>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- PIE DE PAGINA - Requisito 12 y 13 -->
+<footer>
+  <p>EL UNIVERSO - TEMA ESPECIFICO: VIA LACTEA</p>
+  <p>Hecho para CBTis 29 - 2026</p>
+</footer>
+
+</body>
+</html>
